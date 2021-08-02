@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: grey;
+}
+
+#logo-sx {
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    width: 100%;
+    
+}
+
+input[type=search] {
+    background-color: grey;
+    margin: 10px;
+    border: none;
+    border-radius: 5%;
+    
+}
+
+input[type=search]::placeholder {
+    color: black;
+}
+
+.logo-dx  {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+.ball {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 90vh;
+}
+
+@media screen and (max-width:768px) {
+    aside {
+        display: none;
+    }
+    
+    header {
+        width: 100vw;
+    }
+}
